@@ -12,6 +12,13 @@
 <html>
 <head>
 	<title>Bootstap Example</title>
+
+	<script type="text/javascript">
+		$(function () {
+$(’[data-toggle="tooltip"]’).tooltip();
+$("#example").tooltip(options);
+})
+	</script>
 	<style type="text/css">
 
 
@@ -289,6 +296,28 @@ height:8em;"class="form-control" id="message" placeholder="Message (required)"> 
 <div class="btn btn-default pull-right">Send Message</div >
 </form>
 
+</div>
+
+<div class="tooltipexample">
+	<a href="#" data-toggle="tooltip" title="" data-original-title="Link Tooltip">Link</a>
+	<div class="myText">
+Oat cake jelly beans cake ice cream biscuit.
+<a href="#" data-toggle="tooltip" title="" data-original-title="Here’s a Candy Tooltip">Candy</a>
+sesame snaps caramels pudding macaroon marshmallow apple pie cake topping. Halvah
+<a href="#" data-toggle="tooltip" title="" data-original-title="Whoa! A Croissant Tooltip">croissant</a>
+bonbon jelly. Bonbon pastry jelly. Fruitcake lemon drops gummi bears cookie jelly lollipop apple pie chupa chups pastry. Caramels dessert muffin. Chupa chups
+<a href="#" data-toggle="tooltip" title="" data-original-title="Another Sweet Tooltip">sweet</a>
+cotton candy sweet roll candy icing liquorice pudding. Gummies candy canes oat cake pastry.
+<h4>ToolTip On Button</h4>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left"  -
+title="Tooltip on left">Tooltip on left</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top"  -
+title="Tooltip on top">Tooltip on top</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom"  -
+title="Tooltip on bottom">Tooltip on bottom</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right"  -
+title="Tooltip on right">Tooltip on right</button>
+</div >
 </div>
 
 <footer class="footer" style="margin: 5em 0em 1em 0em;">
