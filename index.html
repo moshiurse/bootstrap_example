@@ -12,6 +12,7 @@
 <html>
 <head>
 	<title>Bootstap Example</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script type="text/javascript">
 		$(function () {
@@ -43,10 +44,8 @@ font-size: 5em;
 </head>
 <body>
 
-<div class="container-fluid">
-<div class="header col-md-12">
-	<h1>A complete Bootstrap Based Application</h1>
-</div>
+<div class="container">
+
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container">
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -73,6 +72,12 @@ font-size: 5em;
 </div>
 	</div>
 </nav>
+
+<div class="container">
+	<div class="jumbotron text-c">
+		<h2>A complete Bootstrap Based Application</h2>
+	</div>
+</div>
 
 
 <form class="navbar-form navbar-left" role="search">
@@ -186,6 +191,66 @@ insert
 </form>
 </div>
 
+<div class="well">This is a well</div>
+<div class="alert alert-danger">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+This is a Danger alert</div>
+<div class="alert alert-success">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+This is a Success alert</div>
+<div class="alert alert-info">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+This is a Info alert</div>
+<div class="alert alert-warning">
+<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+This is a Warning alert</div>
+
+<div class="panel panel-body">
+<div class="button">
+	<button type="button" class="btn btn-default">Default</button>
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-link">Link</button>
+</div>
+
+<div class="button">
+	<button type="button" class="btn btn-lg btn-default">Default</button>
+	<button type="button" class="btn btn-lg btn-primary">Primary</button>
+	<button type="button" class="btn btn-lg btn-success">Success</button>
+	<button type="button" class="btn btn-lg btn-danger">Danger</button>
+	<button type="button" class="btn btn-lg btn-warning">Warning</button>
+	<button type="button" class="btn btn-lg btn-link">Link</button>
+</div>
+
+<div class="button">
+	<button type="button" class="btn btn-sm btn-default">Default</button>
+	<button type="button" class="btn btn-sm btn-primary">Primary</button>
+	<button type="button" class="btn btn-sm btn-success">Success</button>
+	<button type="button" class="btn btn-sm btn-danger">Danger</button>
+	<button type="button" class="btn btn-sm btn-warning">Warning</button>
+	<button type="button" class="btn btn-sm btn-link">Link</button>
+</div>
+
+<div class="button">
+	<button type="button" class="btn btn-md btn-default">Default</button>
+	<button type="button" class="btn btn-md btn-primary">Primary</button>
+	<button type="button" class="btn btn-md btn-success">Success</button>
+	<button type="button" class="btn btn-md btn-danger">Danger</button>
+	<button type="button" class="btn btn-md btn-warning">Warning</button>
+	<button type="button" class="btn btn-md btn-link">Link</button>
+</div>
+
+<div class="button">
+	<button type="button" class="btn btn-xs btn-default">Default</button>
+	<button type="button" class="btn btn-xs btn-primary">Primary</button>
+	<button type="button" class="btn btn-xs btn-success">Success</button>
+	<button type="button" class="btn btn-xs btn-danger">Danger</button>
+	<button type="button" class="btn btn-xs btn-warning">Warning</button>
+	<button type="button" class="btn btn-xs btn-link">Link</button>
+</div>
+</div>
 <div class="container" style="margin-top:-1.5em">
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
@@ -195,15 +260,15 @@ insert
 <li data-target="#myCarousel" data-slide-to="2"></li>
 </ol>
 
-<div class="carousel-inner" role="listbox">
+<div class="carousel-inner" data-interval="1000">
 <div class="item active">
-<img src="http://i.imgur.com/ELwJbNq.jpg?1" alt="Image1" width="1170" height="658">
+<img src="images/1.jpg" alt="Image1" width="1170" height="658">
 </div >
 <div class="item">
-<img src="http://i.imgur.com/tI844yf.jpg?1" alt="Image2" width="1170" height="658">
+<img src="images/2.jpg" alt="Image2" width="1170" height="658">
 </div >
 <div class="item">
-<img src="http://i.imgur.com/rMqPvig.jpg?1" alt="Image3" width="1170" height="658">
+<img src="images/3.jpg" alt="Image3" width="1170" height="658">
 </div >
 </div >
 <!-- Left and right controls -->
@@ -373,8 +438,11 @@ Panel Content
 Panel Content
 </div >
 
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
 <footer class="footer" style="margin: 5em 0em 1em 0em;">
 <div class="container" style="padding-left: 0">
+<!--
 <div class="row">
 <div class="col-md-6">
 <div class="wrapper" style="background-color:#ecf0f1; padding: 1em 2em;">
@@ -399,11 +467,13 @@ Panel Content
 </div >
 </div >
 </div >
+-->
 <div class="row" style="text-align: center; padding: 1em; margin: 1em 0; background-color: #ecf0f1;">
-All Rights Reserved Â©. Web Code Geeks 2015.
+All Rights Reserved ©LEGENDBD
 </div >
 </div >
 </footer>
+</nav>
 
 </body>
 </html>
