@@ -1,4 +1,3 @@
-
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -15,13 +14,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<script type="text/javascript">
-		$(function () {
+
+$(function () {
+$(’[data-toggle="popover"]’).popover()
+})
+
+	$(function () {
 $(’[data-toggle="tooltip"]’).tooltip();
 $("#example").tooltip(options);
 })
 	</script>
 	<style type="text/css">
-
 
 .section-title {
 text-align:center;
@@ -204,6 +207,19 @@ This is a Info alert</div>
 <div class="alert alert-warning">
 <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 This is a Warning alert</div>
+
+<div class="badgeexample">
+	<a href="#">Likes<span class="badge">100</span></a>
+	<a href="#">Comments<span class="badge">50</span></a>
+	<a href="#">Share<span class="badge">10</span></a>
+	<button type="button" class="btn btn-success">Likes<span class="badge">1.5k</span></button>
+</div>
+<h1>Like <span class="label label-default">Like me?</span></h1>
+<h2>Like <span class="label label-success">Like me?</span></h2>
+<h3>Like <span class="label label-warning">Like me?</span></h3>
+<h4>Like <span class="label label-info">Like me?</span></h4>
+<h5>Like <span class="label label-danger">Like me?</span></h5>
+<h6>Like <span class="label label-default">Like me?</span></h6>
 
 <div class="panel panel-body">
 <div class="button">
@@ -389,6 +405,25 @@ title="Tooltip on right">Tooltip on right</button>
 </div >
 </div>
 
+<button type="button" class="btn btn-primary" data-toggle="popover" title="Popover title" data-content="And here’s some amazing content. It’s very engaging. Right?">Click to toggle popover</button>
+
+<button type="button" class="btn btn-default" data-container="body" title="Popover Left" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+Popover on left
+</button>
+<button type="button" class="btn btn-default" data-container="body" title="Popover top" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+Popover on top
+</button>
+<button type="button" class="btn btn-default" data-container="body" title="Popover bottom" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+Popover on bottom
+</button>
+<button type="button" class="btn btn-default" data-container="body" title="Popover right" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+Popover on right
+</button>
+
+<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus"
+ title="Dismissible popover" data-content="And here’s some amazing  -
+content. It’s very engaging. Right?">Dismissible popover</a>
+
 <div class="panel panel-default">
 <div class="panel-heading">Panel Heading Without Title</div >
 <div class="panel-body">
@@ -469,7 +504,7 @@ Panel Content
 </div >
 -->
 <div class="row" style="text-align: center; padding: 1em; margin: 1em 0; background-color: #ecf0f1;">
-All Rights Reserved ©LEGENDBD
+All Rights Reserved ©Moshiur Rahman
 </div >
 </div >
 </footer>
